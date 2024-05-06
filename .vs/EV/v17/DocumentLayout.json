@@ -1,0 +1,336 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\ev\\EV\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|c:\\users\\lenovo\\ev\\ev\\mitsu_adapter\\zone_3.2_thermalcalibration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\zone_3.2_thermalcalibration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|c:\\users\\lenovo\\ev\\ev\\mitsu_adapter\\zone_3.2_realtimedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\zone_3.2_realtimedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|c:\\users\\lenovo\\ev\\ev\\mitsu_adapter\\zone_3.2_foamcalibration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\zone_3.2_foamcalibration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|C:\\Users\\Lenovo\\ev\\EV\\mitsu_adapter\\zone_3.1_thermaldispensing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\zone_3.1_thermaldispensing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|C:\\Users\\Lenovo\\ev\\EV\\mitsu_adapter\\zone_3.1_thermalcalibration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\zone_3.1_thermalcalibration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|C:\\Users\\Lenovo\\ev\\EV\\mitsu_adapter\\zone_3.1_productiondata.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\zone_3.1_productiondata.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|c:\\users\\lenovo\\ev\\ev\\mitsu_adapter\\zone_3.1_palletidreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\zone_3.1_palletidreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|C:\\Users\\Lenovo\\ev\\EV\\mitsu_adapter\\zone_3.1_inserationcalibration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\zone_3.1_inserationcalibration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|C:\\Users\\Lenovo\\ev\\EV\\mitsu_adapter\\zone_3.1_inseratdispensingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\zone_3.1_inseratdispensingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|C:\\Users\\Lenovo\\ev\\EV\\mitsu_adapter\\zone_3.1_foamcalibration.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\zone_3.1_foamcalibration.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|C:\\Users\\Lenovo\\ev\\EV\\mitsu_adapter\\zone_3.1_drumdetails.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\zone_3.1_drumdetails.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|c:\\users\\lenovo\\ev\\ev\\mitsu_adapter\\zone_3.1_foamdispensing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\zone_3.1_foamdispensing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|C:\\Users\\Lenovo\\ev\\EV\\mitsu_adapter\\leaktesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\leaktesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|C:\\Users\\Lenovo\\ev\\EV\\mitsu_adapter\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|C:\\Users\\Lenovo\\ev\\EV\\mitsu_adapter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|C:\\Users\\Lenovo\\ev\\EV\\mitsu_adapter\\zone_3.1_realtimedata.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\zone_3.1_realtimedata.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|C:\\Users\\Lenovo\\ev\\EV\\mitsu_adapter\\weldintegrity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\weldintegrity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|C:\\Users\\Lenovo\\ev\\EV\\mitsu_adapter\\weldingstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\weldingstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|C:\\Users\\Lenovo\\ev\\EV\\mitsu_adapter\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EAFCF3D1-D2A6-4263-A24E-072B9491AA4B}|Mitsu_Adapter\\Mitsu_Adapter.csproj|solutionrelative:mitsu_adapter\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Zone_3.2_ThermalCalibration.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.2_ThermalCalibration.cs",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\Zone_3.2_ThermalCalibration.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.2_ThermalCalibration.cs",
+              "RelativeToolTip": "Mitsu_Adapter\\Zone_3.2_ThermalCalibration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T04:28:48.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Zone_3.2_RealTimeData.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.2_RealTimeData.cs",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\Zone_3.2_RealTimeData.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.2_RealTimeData.cs",
+              "RelativeToolTip": "Mitsu_Adapter\\Zone_3.2_RealTimeData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T04:28:47.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Zone_3.2_FoamCalibration.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.2_FoamCalibration.cs",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\Zone_3.2_FoamCalibration.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.2_FoamCalibration.cs",
+              "RelativeToolTip": "Mitsu_Adapter\\Zone_3.2_FoamCalibration.cs",
+              "ViewState": "AQIAAJ8AAAAAAAAAAAAAwFAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T04:28:37.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Zone_3.1_PalletIDReport.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_PalletIDReport.cs",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\Zone_3.1_PalletIDReport.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_PalletIDReport.cs",
+              "RelativeToolTip": "Mitsu_Adapter\\Zone_3.1_PalletIDReport.cs",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAowFEAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T04:28:03.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Zone_3.1_ProductionData.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_ProductionData.cs",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\Zone_3.1_ProductionData.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_ProductionData.cs",
+              "RelativeToolTip": "Mitsu_Adapter\\Zone_3.1_ProductionData.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAFEAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T09:12:22.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Zone_3.1_ThermalCalibration.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_ThermalCalibration.cs",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\Zone_3.1_ThermalCalibration.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_ThermalCalibration.cs",
+              "RelativeToolTip": "Mitsu_Adapter\\Zone_3.1_ThermalCalibration.cs",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAowAwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T11:01:34.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Zone_3.1_ThermalDispensing.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_ThermalDispensing.cs",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\Zone_3.1_ThermalDispensing.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_ThermalDispensing.cs",
+              "RelativeToolTip": "Mitsu_Adapter\\Zone_3.1_ThermalDispensing.cs",
+              "ViewState": "AQIAAHMAAAAAAAAAAAAAwFAAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T11:10:28.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Zone_3.1_InseratDispensingData.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_InseratDispensingData.cs",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\Zone_3.1_InseratDispensingData.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_InseratDispensingData.cs",
+              "RelativeToolTip": "Mitsu_Adapter\\Zone_3.1_InseratDispensingData.cs",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAAwFAAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T04:24:57.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Zone_3.1_FoamCalibration.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_FoamCalibration.cs",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\Zone_3.1_FoamCalibration.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_FoamCalibration.cs",
+              "RelativeToolTip": "Mitsu_Adapter\\Zone_3.1_FoamCalibration.cs",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAcwFAAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T12:05:59.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Zone_3.1_DrumDetails.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_DrumDetails.cs",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\Zone_3.1_DrumDetails.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_DrumDetails.cs",
+              "RelativeToolTip": "Mitsu_Adapter\\Zone_3.1_DrumDetails.cs",
+              "ViewState": "AQIAAMoAAAAAAAAAAAAowFAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T09:30:07.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Zone_3.1_InserationCalibration.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_InserationCalibration.cs",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\Zone_3.1_InserationCalibration.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_InserationCalibration.cs",
+              "RelativeToolTip": "Mitsu_Adapter\\Zone_3.1_InserationCalibration.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T11:06:11.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Zone_3.1_FoamDispensing.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_FoamDispensing.cs",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\Zone_3.1_FoamDispensing.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_FoamDispensing.cs",
+              "RelativeToolTip": "Mitsu_Adapter\\Zone_3.1_FoamDispensing.cs",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAuwIcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T04:27:51.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Program.cs",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Program.cs",
+              "RelativeToolTip": "Mitsu_Adapter\\Program.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAcwEgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T04:32:09.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\App.config",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\App.config",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\App.config",
+              "RelativeToolTip": "Mitsu_Adapter\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-23T12:09:35.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LeakTesting.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\LeakTesting.cs",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\LeakTesting.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\LeakTesting.cs",
+              "RelativeToolTip": "Mitsu_Adapter\\LeakTesting.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAgwBkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T12:16:05.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Zone_3.1_RealTimeData.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_RealTimeData.cs",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\Zone_3.1_RealTimeData.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\Zone_3.1_RealTimeData.cs",
+              "RelativeToolTip": "Mitsu_Adapter\\Zone_3.1_RealTimeData.cs",
+              "ViewState": "AQIAAJcAAAAAAAAAAAAuwJQAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T10:37:31.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "WeldIntegrity.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\WeldIntegrity.cs",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\WeldIntegrity.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\WeldIntegrity.cs",
+              "RelativeToolTip": "Mitsu_Adapter\\WeldIntegrity.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAAAFAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T04:30:38.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "WeldingStation.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\WeldingStation.cs",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\WeldingStation.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\WeldingStation.cs",
+              "RelativeToolTip": "Mitsu_Adapter\\WeldingStation.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAuwAwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T05:39:50.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\packages.config",
+              "RelativeDocumentMoniker": "Mitsu_Adapter\\packages.config",
+              "ToolTip": "C:\\Users\\Lenovo\\ev\\EV\\Mitsu_Adapter\\packages.config",
+              "RelativeToolTip": "Mitsu_Adapter\\packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-18T09:34:55.692Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

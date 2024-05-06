@@ -1,0 +1,328 @@
+using SOPS.MitsuBase;
+using System;
+using SOPS.MTConnect;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Net.NetworkInformation;
+using System.Configuration;
+
+namespace SOPS.Mitsu_Adapter
+{
+    internal class CylinderHead_Machine : MitsuBaseClass
+    {
+        string _IPaddress = string.Empty;
+        private string status = string.Empty;
+        private string _previousbarcodeData = string.Empty;
+        private string _previousbarcodeData1 = string.Empty;
+        const int barCodeRegister = 2505;
+        const int barCodeRegister1 = 2518;
+        Message _mcAlarms = new Message("alarms");
+        Message _mbarcodeData = new Message("cyh_barcode_name");
+        Message _mexhaust = new Message("exhaust_param");
+        Message _minlet = new Message("inlet_param");
+        Message _mpartcount = new Message("part_count_2");
+
+
+        public CylinderHead_Machine(int pLCLogicalStation, int adapterPortNumber, int queryIntervalinMS) : base(pLCLogicalStation, adapterPortNumber, queryIntervalinMS)
+        {
+            _IPaddress = System.Configuration.ConfigurationManager.AppSettings["ipAddress"];
+            int idleTestTimeInMIN = Int32.Parse(ConfigurationManager.AppSettings["IdleTestTimeInMIN"]);
+
+            System.Timers.Timer timer = new System.Timers.Timer();
+            timer.Interval = idleTestTimeInMIN * 60 * 1000;
+            timer.Elapsed += OnTestIdleState;
+            timer.Start();
+        }
+
+        private void OnTestIdleState(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            Ping png = new Ping();
+            PingReply pingRply = png.Send(_IPaddress, 6000);
+            if (pingRply.Status == IPStatus.Success)
+            {
+                IsConnected = true;
+                Console.WriteLine("Adapter waiting for ping response. Ping status - {0} ", pingRply.Status);
+
+            }
+            else
+            {
+                IsConnected = false;
+                _machineLampStatus.Value = 2;
+                _mAdapter.SendChanged();
+                Console.WriteLine("Adapter waiting for ping response. Ping status - {0} ", pingRply.Status);
+            }
+
+        }
+        public override void StartPLCTimer()
+        {
+            _mAdapter.Start();
+            _mAvail.Value = "AVAILABLE";
+            _mAdapter.AddDataItem(_mAvail);
+            _mAdapter.AddDataItem(_mbarcodeData);
+            _mAdapter.AddDataItem(_mpartcount);
+            _mAdapter.AddDataItem(_mexhaust);
+            _mAdapter.AddDataItem(_minlet);
+            _mAdapter.AddDataItem(_mcAlarms);
+            _mAdapter.AddDataItem(_machineLampStatus);
+            _mAdapter.AddDataItem(_mMajorDownTime);
+            _mAdapter.AddDataItem(_mMinorDownTime);
+            // _mAdapter.AddDataItem(_mDaytankSetting);
+            _machineLampStatus.Value = 3;
+            _mMajorDownTime.Value = 0;
+            _mMinorDownTime.Value = 0;
+
+            Thread t = new Thread(new ThreadStart(ParamExchangeThread));
+            t.Start();
+            t.IsBackground = true;
+        }
+
+        protected override void OnReadPLCData()
+        {
+            _mAdapter.Begin();
+
+            GetBarCodeDATA();
+            GetProd();
+            GetExhaust();
+            GetInlet();
+            _mAdapter.SendChanged();
+            GetMachineLampStatus();
+            if (((int)_machineLampStatus.Value == 2) || ((int)_machineLampStatus.Value == 4))
+            {
+                DownTimeManager(true);
+            }
+            else if ((int)_machineLampStatus.Value == 0)  //check machine lamp status for green auto , if auto stop timer
+            {
+                DownTimeManager(false);
+            }
+            GetAlarms();
+            if (!IsConnected) return;
+
+            //GetdayTankSetting();
+
+            GetPlcGroups();
+            
+
+        }
+
+
+        private void GetAlarms()
+        {
+            int currentAlarm = 0;
+            int alramregisters = 0;
+
+            if (_mitsuPLC.GetDevice("X3", out alramregisters) != 0)
+            {
+                IsConnected = false;
+                return;
+            }
+            if (alramregisters == 1)
+            {
+                currentAlarm = 1;
+            }
+            else if (_mitsuPLC.GetDevice("X45", out alramregisters) == 0 && alramregisters == 1)
+            {
+                currentAlarm = 2;
+            }
+            else if (_mitsuPLC.GetDevice("X56", out alramregisters) == 0 && alramregisters == 1)
+            {
+                currentAlarm = 3;
+            }
+            else if (_mitsuPLC.GetDevice("X46", out alramregisters) == 0 && alramregisters == 1)
+            {
+                currentAlarm = 4;
+            }
+            else if (_mitsuPLC.GetDevice("X27", out alramregisters) == 0 && alramregisters == 1)
+            {
+                currentAlarm = 5;
+            }
+
+            string alarmText = string.Empty;
+            switch (currentAlarm)
+            {
+                default:
+                    alarmText = string.Empty;
+                    break;
+                case 1:
+                    alarmText = string.Empty;
+                    break;
+                case 2:
+                    alarmText = "Emergency Pressed";
+                    break;
+                case 3:
+                    alarmText = "Oil Pressure Low";
+                    break;
+                case 4:
+                    alarmText = "Oil Level Low";
+                    break;
+                case 5:
+                    alarmText = "Air Pressure Low";
+                    break;
+            }
+            if (!string.IsNullOrEmpty(alarmText))
+            {
+                _mcAlarms.Value = "[{\"code\":\"-1\",\"descr\":\"" + alarmText + "\"}]";
+            }
+        }
+        private void GetBarCodeDATA()
+        {
+            string barCodeData = string.Empty;
+            string barCodeData1 = string.Empty;
+
+            /* if (prodcount != 0)
+             { */
+
+            for (int i = 0; i < 7; i++)
+            {
+                string registerInfo = "D" + (barCodeRegister + i);
+                int outData = 0;
+                if (_mitsuPLC.GetDevice(registerInfo, out outData) != 0) return;
+                byte lowByte = (byte)(outData & 0xff);
+                byte highByte = (byte)((outData >> 8) & 0xff);
+                barCodeData = barCodeData + Convert.ToChar(lowByte).ToString() + Convert.ToChar(highByte).ToString();
+
+            }
+            for (int i = 0; i < 7; i++)
+            {
+                string registerInfo1 = "D" + (barCodeRegister1 + i);
+                int outData1 = 0;
+                if (_mitsuPLC.GetDevice(registerInfo1, out outData1) != 0) return;
+                byte lowByte1 = (byte)(outData1 & 0xff);
+                byte highByte1 = (byte)((outData1 >> 8) & 0xff);
+                barCodeData1 = barCodeData1 + Convert.ToChar(lowByte1).ToString() + Convert.ToChar(highByte1).ToString();
+            }
+
+            barCodeData = barCodeData.Replace("\0", string.Empty).Replace("\n", string.Empty).Replace("NULL", string.Empty).Trim();
+            barCodeData1 = barCodeData1.Replace("\0", string.Empty).Replace("\n", string.Empty).Replace("NULL", string.Empty).Trim();
+
+            /*if (_previousbarcodeData != barCodeData && _previousbarcodeData1 != barCodeData1)
+            {*/
+                int stat = 0;
+                int stat1 = 0;
+                int stat2 = 0;
+                int stat3 = 0;
+
+                if (_mitsuPLC.GetDevice("D513", out stat) == 0 && stat == 2)
+                {
+
+                    if (_mitsuPLC.GetDevice("D514", out stat1) == 0 && stat1 == 2)
+                    {
+
+                    if (_mitsuPLC.GetDevice("D515", out stat2) == 0 && stat2 == 2)
+                    {
+
+                        if (_mitsuPLC.GetDevice("D516", out stat3) == 0 && stat3 == 2)
+                        {
+                            status = "O";
+                            _mbarcodeData.Value = "[{\"cyl_head\" : \"" + barCodeData + "\", \"cam_hold\": \"" + barCodeData1 + "\", \"status\" : \"" + status + "\"]}";
+                            
+                           
+
+                        }
+                        _previousbarcodeData = barCodeData;
+                        _previousbarcodeData1 = barCodeData1;
+                    }
+                    }
+                }
+                else
+                {
+                status = "Error";
+                }
+
+
+            _mAdapter.SendChanged();
+
+        }
+
+        private void GetExhaust()
+        {
+            short[] exch = new short[2];
+            if (ReadDeviceBlock("D1246", 2, out exch) != 0) return;
+            string exchain = this.convertDataTo(exch, "real");
+
+            int exhchain = 0;
+            if (_mitsuPLC.GetDevice("D1246", out exhchain) != 0) return;
+            float chain = Convert.ToSingle(exhchain);
+
+
+            short[] exchpr = new short[2];
+            if (ReadDeviceBlock("D1212", 2, out exchpr) != 0) return;
+            string exchainpres = this.convertDataTo(exchpr, "real");
+
+            short[] exchocp = new short[2];
+            if (ReadDeviceBlock("D1250", 2, out exchocp) != 0) return;
+            string exopnchain = this.convertDataTo(exchocp, "real");
+
+            short[] exchopr = new short[2];
+            if (ReadDeviceBlock("D1218", 2, out exchopr) != 0) return;
+            string exopchainres = this.convertDataTo(exchopr, "real");
+
+            _mexhaust.Value = "{\"ExhaustChainPocket\" : \"" + exchain + "\", \"ExhaustChainPocketResult\": \"" + exchainpres + "\", \"ExhaustChainOpenPocket\": \"" +
+                exopnchain + "\",  \"ExhaustChainOpenPocketResult\": \"" + exopchainres + "\"}";
+
+            _mAdapter.SendChanged();
+
+        }
+        private void GetInlet()
+        {
+            short[] inch = new short[2];
+            if (ReadDeviceBlock("D1254", 2, out inch) != 0) return;
+            string inchain = this.convertDataTo(inch, "real");
+
+            short[] inchpr = new short[2];
+            if (ReadDeviceBlock("D1206", 2, out inchpr) != 0) return;
+            string inchainpres = this.convertDataTo(inchpr, "real");
+
+            short[] inhocp = new short[2];
+            if (ReadDeviceBlock("D1258", 2, out inhocp) != 0) return;
+            string inopnchain = this.convertDataTo(inhocp, "real");
+
+            short[] inchopr = new short[2];
+            if (ReadDeviceBlock("D1200", 2, out inchopr) != 0) return;
+            string inopchainres = this.convertDataTo(inchopr, "real");
+
+            _minlet.Value = "{\"InletChainPocket\" : \"" + inchain + "\", \"InletChainPocketResult\": \"" + inchainpres + "\", \"InletChainOpenPocket\": \"" +
+                inopnchain + "\",  \"InletChainOpenPocketResult\": \"" + inopchainres + "\"}";
+
+            _mAdapter.SendChanged();
+        }
+        private void GetProd()
+        {
+            int pc = 0;
+            _mitsuPLC.GetDevice("D526", out pc);
+            _mpartcount.Value = "{\"part_count\" : \"" + pc + "\"}";
+
+            _mAdapter.SendChanged();
+
+        }
+        private void GetMachineLampStatus()
+        {
+            int retValuesalues;
+            if (_mitsuPLC.GetDevice("Y50", out retValuesalues) != 0)
+            {
+                IsConnected = false;
+                return;
+            }
+
+            if (retValuesalues == 1)
+            {
+                _machineLampStatus.Value = 1; //ALARM
+            }
+            else if (_mitsuPLC.GetDevice("Y52", out retValuesalues) == 0 && retValuesalues == 1)
+                _machineLampStatus.Value = 0; //AUTOMATIC
+            else if (_mitsuPLC.GetDevice("Y51", out retValuesalues) == 0 && retValuesalues == 1)
+                _machineLampStatus.Value = 2; //IDLE
+            else
+                _machineLampStatus.Value = 3; //IDLE
+
+        }
+    }
+}
+
+
+
+
+
+
